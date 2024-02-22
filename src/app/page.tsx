@@ -1,17 +1,20 @@
 "use client";
-
+import React from "react";
+import Testonial from "@/components/component/Testonial";
 import { HeroParallaxDemo } from "@/components/component/HeroSection";
 import { BentoGridThirdDemo } from "@/components/component/Content";
 import { TypewriterEffectDemo } from "@/components/component/NewLetter";
 import { SVGMaskEffectDemo } from "@/components/component/Mask";
 import { CardTwo } from "@/components/component/Card";
+// import {SuccessBanner} from "@/components/component/Notify";
 
 
 export default function Home() {
 
   return (
     <>
-      <div className="bg-slate-50">
+    {/* <SuccessBanner/> */}
+      <div className="bg-slate-50 overflow-x-hidden">
         <div>
           <HeroParallaxDemo />
         </div>
@@ -50,6 +53,11 @@ export default function Home() {
         </div>
         <div className="mt-10">
           <SVGMaskEffectDemo />
+        </div>
+
+        <div className="mt-10 mb-10">
+          <Testonial/>
+
         </div>
         <div className="mt-6">
           <TypewriterEffectDemo />
